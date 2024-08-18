@@ -95,7 +95,7 @@ class MainActivity() : AppCompatActivity(), Parcelable {
     }
 
     private fun getResponse(question: String, callback: (String) -> Unit){
-       val apiKey="sk-2IHcho2J1Xw6i8sgP0NNe1sTU1I70cow7QHw6V6awhT3BlbkFJtRu5d-ETJ_sZZnaC3ACPTvlsttNiFW7GsxLCFHKUUA"
+       val apiKey="API-KEY"
        val url="https://api.openai.com/v1/completions"
         val requestBody = """ 
         {
