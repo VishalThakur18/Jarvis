@@ -1,0 +1,90 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/mainbackground">
+
+    <!-- Typing TextView -->
+    <TextView
+        android:id="@+id/typingTextView"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/textbg"
+        android:elevation="5dp"
+        android:fontFamily="@font/roboto_mono"
+        android:gravity="start"
+        android:paddingStart="4dp"
+        android:paddingTop="10dp"
+        android:textColor="#009FFF"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <!-- Divider -->
+    <View
+        android:layout_marginEnd="2dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#2B2D30" />
+
+    <!-- Scrollable Output TextView -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_margin="5dp">
+
+        <TextView
+            android:id="@+id/outputText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/output_text_bg"
+            android:elevation="10dp"
+            android:padding="10dp"
+            android:hint="Processing..."
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+    </ScrollView>
+
+    <!-- Fixed Bottom Layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+        android:layout_marginBottom="15dp"
+        android:gravity="bottom"
+        android:layout_gravity="bottom">
+
+        <EditText
+            android:id="@+id/inputTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@drawable/textbg"
+            android:hint="Enter text here..."
+            android:minHeight="48dp"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <ImageButton
+            android:id="@+id/sendButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="8dp"
+            android:background="@android:color/transparent"
+            android:elevation="8dp"
+            android:src="@drawable/baseline_send_24"
+            tools:ignore="SpeakableTextPresentCheck" />
+    </LinearLayout>
+
+</LinearLayout>
